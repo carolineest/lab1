@@ -93,5 +93,4 @@ def add_wishlist(req):
         BarangWishlist.objects.create(nama_barang=nama, harga_barang=harga, deskripsi=deskripsi)
         return HttpResponse()
     else:
-        print("here")
         return redirect("wishlist:show_wishlist")
